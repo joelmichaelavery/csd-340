@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title style="text-shadow: 2px 2px #000; color: silver; font-size: 48px;">Bearded Skull Laser Engraving Contact Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #000;
+			color: #fff;
+		}
+		
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #444;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+			border-radius: 5px;
+		}
+		
+		h1 {
+			text-align: center;
+			margin-top: 0;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 5px;
+			color: #fff;
+		}
+		
+		input[type="text"], textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			font-size: 16px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			background-color: #2d2d2d;
+			color: #fff;
+		}
+		
+		textarea {
+			height: 150px;
+		}
+		
+		input[type="submit"] {
+			background-color: #ff6700;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #ff4500;
+		}
+		
+		.contact-info {
+			margin-top: 30px;
+			color: #fff;
+		}
+		
+		.contact-info li {
+			margin-bottom: 10px;
+		}
+		
+		.contact-info li:first-child {
+			margin-top: 0;
+		}
+		
+		.contact-info li:before {
+			content: "\2022";
+			color: #ff6700;
+			display: inline-block;
+			width: 1em;
+			margin-left: -1em;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Bearded Skull Laser Engraving Contact Form</h1>
+		<form action="#" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" required>
+			<label for="phone">Phone:</label>
+			<input type="text" id="phone" name="phone" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+		<ul class="contact-info">
+			<li>Sample Name: John Doe</li>
+			<li>Sample Phone: 555-555-5555</li>
+			<li>Sample Email: john.doe@example.com</li>
+		</ul>
+	</div>
+</body>
+</html>
