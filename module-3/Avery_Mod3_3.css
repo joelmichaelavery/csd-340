@@ -38,6 +38,17 @@ h1 {
     right: 0;  
     
 }
+a {
+    text-decoration: none; 
+    float:right; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+}
+
+a:hover{
+    text-decoration: underline; 
+}
+
 
 h3 {
     font-weight: 500; /*Set the weight of the headings to 500 also padded them to line up with the lists. */
@@ -52,17 +63,4 @@ ul {
     font-weight: 300; 
     list-style-type: upper-roman;
     
-}
-
-
-
-a {
-    text-decoration: none; 
-    float:right; 
-    margin-bottom: 20px; 
-    padding: 20px; 
-}
-
-a:hover{
-    text-decoration: underline; 
 }
