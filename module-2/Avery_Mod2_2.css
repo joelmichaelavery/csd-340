@@ -47,3 +47,22 @@ a:hover {
 .intro {
     text-indent: 2em;
 }
+
+.last {
+    margin-top: 60%; /*Last div has a margin-top of 60% this will help control the gap between the sections on the top side */
+    width: 100%; /* Last div has a width set to 100% */
+    position: fixed; /*I added this so the link will stay put even when we scroll along with not having to scroll to find it */
+    bottom:0; 
+    right: 0;  
+    
+}
+a {
+    text-decoration: none; 
+    float:right; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+}
+
+a:hover{
+    text-decoration: underline; 
+}
