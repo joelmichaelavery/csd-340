@@ -29,7 +29,7 @@ ul, ol {
     font-weight: 300; 
 }
 
-ol, head, h3 {
+ol, h3 {
     border: 1px solid red; 
 }
 
