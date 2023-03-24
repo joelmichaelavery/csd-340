@@ -1,21 +1,24 @@
 h1 {
-    text-align: center;
+    text-align: center; /*Centered on the Page the H1 header*/
 }
 
 .left, .right{
     width: 45%;
     display: inline-block; 
     vertical-align: top;  
-    border: 1px solid red;
+    
 }
 
 .left {
     border-radius: 15px; 
     margin-right: 20px; 
+    border: 1px solid red;
 }
 
 .right {
     margin-left: 20px; 
+    border-radius: 15px; 
+    border: 1px dashed red; 
 }
 
 .underneath {
@@ -25,13 +28,40 @@ h1 {
 
 .last {
     margin-top: 60%;
-    width: 100%
+    width: 100%; 
+    position: fixed; 
+    bottom:0; 
+    right: 0;  
+    
 }
 
 h3 {
-    font-weight: 500; 
+    font-weight: 500;
+    padding: 10px;
 }
 
 ul, ol {
     font-weight: 300; 
+}
+
+ol {
+    padding: 10px; 
+    list-style-position: inside;
+}
+
+ul {
+    padding: 10px; 
+    list-style-type: upper-roman;
+    list-style-position: inside; 
+}
+
+a {
+    text-decoration: none; 
+    float:right; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+}
+
+a:hover{
+    text-decoration: underline; 
 }
