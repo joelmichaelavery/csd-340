@@ -11,6 +11,11 @@ h1 {
 
 .left {
     border-radius: 15px; 
+    margin-right: 20px; 
+}
+
+.right {
+    margin-left: 20px; 
 }
 
 .underneath {
@@ -29,12 +34,4 @@ h3 {
 
 ul, ol {
     font-weight: 300; 
-}
-
-.left {
-    margin-right: 20px; 
-}
-
-.right{
-    margin-left: 20px;
 }
