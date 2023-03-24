@@ -5,6 +5,7 @@ h1 {
 
 .left, .right {
     width: 45%;
+    margin-right: 100px;
 }
 
 .underneath {
@@ -24,7 +25,7 @@ ul, ol {
     font-weight: 300; 
 }
 
-ol, title {
+ol, head, h3 {
     border: 1px solid red; 
 }
 
