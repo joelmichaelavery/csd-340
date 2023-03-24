@@ -4,7 +4,7 @@ h1 {
 
 .left, .right{
     width: 45%;
-    display: inline-block; 
+    display: inline-block; /* The left and the right div, using an inline block and have a width of 45% along with being aligned vertically at the top. */
     vertical-align: top;  
     
 }
@@ -13,12 +13,16 @@ h1 {
     border-radius: 15px; 
     margin-right: 20px; 
     border: 1px solid red;
+    padding: 10px;
+    list-style-position: inside;
 }
 
 .right {
     margin-left: 20px; 
     border-radius: 15px; 
     border: 1px dashed red; 
+    padding: 10px;
+    list-style-position: inside; 
 }
 
 .underneath {
@@ -27,33 +31,28 @@ h1 {
 }
 
 .last {
-    margin-top: 60%;
-    width: 100%; 
-    position: fixed; 
+    margin-top: 60%; /*Last div has a margin-top of 60% this will help control the gap between the sections on the top side */
+    width: 100%; /* Last div has a width set to 100% */
+    position: fixed; /*I added this so the link will stay put even when we scroll along with not having to scroll to find it */
     bottom:0; 
     right: 0;  
     
 }
 
 h3 {
-    font-weight: 500;
-    padding: 10px;
+    font-weight: 500; /*Set the weight of the headings to 500 also padded them to line up with the lists. */
 }
 
-ul, ol {
+ol { 
     font-weight: 300; 
 }
 
-ol {
-    padding: 10px; 
-    list-style-position: inside;
+ul {
+    font-weight: 300; 
+    list-style-type: upper-roman;
 }
 
-ul {
-    padding: 10px; 
-    list-style-type: upper-roman;
-    list-style-position: inside; 
-}
+
 
 a {
     text-decoration: none; 
