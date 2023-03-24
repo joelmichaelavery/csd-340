@@ -3,9 +3,9 @@ h1 {
 }
 
 
-.left, .right {
+.left h3, .right h3 {
     width: 45%;
-    display: inline-block; 
+    display: flex; 
     vertical-align: top; 
 }
 
