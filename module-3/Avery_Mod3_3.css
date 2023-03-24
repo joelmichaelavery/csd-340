@@ -2,10 +2,29 @@ h1 {
     text-align: center;
 }
 
+
 .left, .right {
-    width: 45%
+    width: 45%;
 }
+
 .underneath {
-    width: 100%
-    margin-top: 60%
+    width: 100%;
+    margin-top: 60%;
 }
+
+.last {
+    margin-top: 60%;
+}
+
+h3 {
+    font-weight: 500; 
+}
+
+ul, ol {
+    font-weight: 300; 
+}
+
+ol, title {
+    border: 1px solid red; 
+}
+
