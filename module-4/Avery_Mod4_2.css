@@ -1,0 +1,60 @@
+/* Joel Avery 
+CSD-340 
+Module 4.2 assignment
+css code */
+
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    border: 1px solid; 
+    border-color: rgba(255,103,103,1.0); 
+    grid-column-gap: 10px; 
+    
+}
+
+.grid-container > div {
+    border-right: 1px solid; 
+    border-color: rgba(255,103,103,1.0); 
+    padding-right: 10px; 
+}
+
+image-gallery {
+    margin-top: 10%; 
+}
+
+h1 {
+    text-align: center; 
+    color: rgba(255,103,103,1.0);
+}
+
+h3 {
+    text-align: center; 
+    color: rgba(255,103,103,1.0);
+}
+
+figure {
+    text-align: center; 
+}
+
+figcaption {
+    font-style: italic; 
+    font-size: .75em; 
+    color: rgba(255,103,103,1.0);
+}
+
+.last {
+    margin-top: 60%; /*Last div has a margin-top of 60% this will help control the gap between the sections on the top side */
+    width: 100%; /* Last div has a width set to 100% */
+    position: fixed; /*I added this so the link will stay put even when we scroll along with not having to scroll to find it */
+    bottom:0; 
+    right: 0;  
+    
+}
+
+a {
+    text-decoration: none; 
+    float:right; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+}
