@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--Joel Avery -->
+<!Assigment building a Web Page Exercise Part 2 -->
+
+<html lang="en">
+    <head>       
+        <meta name="description"
+                content="My Assignment for Module 2" />
+        <meta name="keywords"
+                content="Bellevue University, Module_2, Web Page, Exercise" />
+        <meta http-equiv="author"
+              content="Joel Avery" />
+        <meta http-equiv="pragma"
+              content="no-cache" />
+        <link href="Avery_Mod2_2.css" type="text/css"
+              rel="stylesheet" />
+        <title>CSD 340 Web Development with HTML and CSS</title>
+	  <script>
+		var firstVariable = "streetlights"; 
+		var secondVariable = "air"; 
+		var thirdVariable = "screamed"; 
+		var fourthVariable = "call"; 
+	  </script>
+        
+    </head>
+    <body>
+        <div id="container">
+            <h1>Assignment 9.3: JavaScript - Part 1</h1>
+            
+            
+            <div class="intro">
+            <p>As soon as the sun set, the <span id = "streetlights">__________</span> flickered on, casting a warm glow across the quiet suburban neighborhood. A small group of kids, including six-year-old Emily and her older brother  		Jack, raced down the sidewalk on their bikes, giggling and shouting. They made their way to the corner store for some candy and soda. </p>
+            </div>
+                
+            <p><span class="sentence"> As they turned onto Main Street, a loud screech filled the <span id = "air">__________</span>, and the group froze in fear as a speeding car raced past them, narrowly missing Jack's bike. Emily                                     		<span id= "screamed">__________</span>, tears streaming down her face, as Jack scooped her up and carried her back to their house.</p>
+            
+            <p>It was a close <span id= "call">__________</span>, and the incident left them all shaken. But as they hugged each other tightly in the safety of their home, they realized how lucky they were to have each other and to be  		alive. They promised to always look out for one another and to never take a single day for granted. </p>
+
+		<p>
+			<button type="button"
+				onclick="document.getElementById('streetlights').innerHTML = firstVariable">streetlights</button> <br />
+
+			<button type="button"
+				onclick="document.getElementById('air').innerHTML = secondVariable">air</button> <br />
+
+			<button type="button"
+				onclick="document.getElementById('screamed').innerHTML = thirdVariable">screamed</button> <br />
+
+			<button type="button"
+				onclick="document.getElementById('call').innerHTML = fourthVariable">call</button> <br />
+		</p>
+            
+        </div>
+         <div class="last">
+                <a href="https://joelmichaelavery.github.io/csd-340/">Back To Landing Page</a>
+            </div>
+    </body>
+</html>
