@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Joel Avery -->
+<!Assigment building a Web Page Exercise Part 2 -->
+
+<html lang="en">
+  <head>             
+    <title>CSD 340 Web Development with HTML and CSS</title>
+  </head>
+  <body>   
+    <h1>Assignment 11.2 JavaScript - Part 3</h1>
+
+    <p>This is an interactive To Do List. Type in your first item in the text book, then click Add. Click the Display button to<br>
+	see current items in the list. Click on Delete Last Entry if you'd like to remove the last entry.</p>
+
+    <input type="text" id="inputBox">  
+    <button onclick="addToArray()">Add</button>
+    <button onclick="deleteFromArray()">Delete Last Entry</button>
+    <button onclick="displayArray()">Display</button>
+    <br><br>
+    <div id="output"></div>
+    <hr />
+	 
+    <script>
+  let myArray = [];
+
+  function addToArray() {
+    let input = document.getElementById("inputBox").value;
+    myArray.push(input);
+    alert(input + " has been added at index " + myArray.length);
+    document.getElementById("inputBox").value=""; 
+  }
+
+  function deleteFromArray() {
+    myArray.pop();
+    alert("Last entry has been deleted");
+  }
+
+  function displayArray() {
+    let output = "";
+    for (let i = 0; i < myArray.length; i++) {
+      output += "Item " + [i + 1] + " = " + myArray[i] + "<br>";
+    }
+    document.getElementById("output").innerHTML = output;
+  }
+</script>
+
+           
+    <div class="last">
+      <a href="https://joelmichaelavery.github.io/csd-340/">Back To Landing Page</a>
+    </div>
+  </body>
+</html>
