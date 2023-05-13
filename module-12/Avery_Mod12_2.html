@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <link href="https://joelmichaelavery.github.io/csd-340/module-3/Avery_Mod3_3.css" type="text/css" 
+              rel ="stylesheet" >
+    </head>
+    <body>
+        <div id="container">
+            <h1>Assignment 12.2: JavaScript - Part 4</h1>
+            <div class="left">
+                <h3>Top 10 Favorite Books</h3>
+		    <button type="button" onclick="sortArray()">Top to Bottom</button>
+		    <button type="button" onclick="sortArrayDesc()">Bottom to Top</button>
+		    <hr />
+               <ol id="myList">
+  			<li>Extreme Ownership</li>
+  			<li>HTML and CSS</li>
+  			<li>Hank the Cowdog</li>
+  			<li>Seven Years in Tibet</li>
+  			<li>To Kill a Mockingbird</li>
+  			<li>The Immortal Life of Henrietta Lacks</li>
+ 		 	<li>The Hitchhiker's Guide to the Galaxy</li>
+  			<li>The New Jim Crow: Mass Incarceration in the Age of Colorblindness</li>
+  			<li>The Alchemist</li>
+  			<li>The Power of Habit</li>
+		</ol>
+		    <script>
+   const myList = document.getElementById("myList");
+const items = [];
+for (let i = 0; i < myList.children.length; i++) {
+    const item = myList.children[i].textContent.replace(/^\d+\.\s+/, "");
+    items.push(item);
+    myList.children[i].textContent = item;
+}
+
+
+function sortArray() {
+    const sortedArray = items.slice().sort();
+    const newItems = sortedArray.map((item, index) => `<li>${index + 1}. ${item}</li>`);
+    myList.innerHTML = newItems.join('');
+    document.querySelector(".left h3").textContent = "Top 10 Favorite Books";
+}
+
+function sortArrayDesc() {
+    const sortedArray = items.slice().sort().reverse();
+    const newItems = sortedArray.map((item, index) => `<li>${10 - index}. ${item}</li>`).join('');
+    myList.innerHTML = newItems;
+}
+
+
+</script>
+
+                
+        </div>
+            <div class="right">
+                <h3>5 Things I've Learned Since the Course Started</h3>
+                    <ul>
+                        <li>How to control text with CSS</li>
+                        <li>What to look for when it comes to accessibility</li>
+                        <li>How to control color with CSS</li>
+                        <li>That CSS likes to view HTML in terms of boxes</li>
+                        <li>How to control the boxes using CSS</li>
+                    </ul>
+            </div>
+            <div class="underneath"></div>
+            <div class="last">
+                <a href="https://joelmichaelavery.github.io/csd-340/">Back To Landing Page</a>
+            </div>
+
+                <!-- Attempted to do <a href="index.html" but it would not work for my link */ -->
+    
+    
+    
+    </body>
+
+</html>
